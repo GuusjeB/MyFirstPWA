@@ -72,3 +72,16 @@ h1 {
   padding: 0.3rem 1rem;
   border-radius: 20px;
 }
+
+.budget-section {
+  display: grid;
+  padding: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 20px;
+
+}
+
+.budget-form {
+  grid-column-start: 2;
+}
+
