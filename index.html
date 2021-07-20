@@ -17,6 +17,7 @@
         <link rel="apple-touch-icon" href="images/icons/icon-512x512.png" />
         <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
         <meta name="theme-color" content="#db4938" />
+        <script src="https://d3js.org/d3.v4.js"></script>
         <!-- Title -->
         <title>Dev'Cofffee PWA</title>
     </head>
@@ -31,6 +32,37 @@
                     <li>Blog</li>
                 </ul>
             </nav>
+            <!-- Budgetting -->
+            <div class="budget-section">
+
+                <div class="budget col col-md col-sm">
+                  <h2>budget</h2>
+                  <img src="images/money-bag.png" width="40" alt="" />
+                  <p class="amount">$ <span id="budgetAmount">0</span></p>
+                </div>
+        
+                <div class="expenses col col-md col-sm">
+                  <h2>expenses</h2>
+                  <img src="images/accounting.png" width="40" alt="" />
+                  <p class="exp-amount">$ <span id="expensesAmount">0</span></p>
+                </div>
+        
+                <div class="balance col col-md col-sm">
+                  <h2>balance</h2>
+                  <img src="images/law.png" width="40" alt="" />
+                  <p class="amount bala">$ <span id="balanceAmount">0</span></p>
+                </div>
+                <!-- Form that takes budget amount -->
+                <div class="budget-form" id="budgetform">
+                    <form id="addForm">
+                       <label for=""> Make a budget</label> <br />
+                       <input type="number" id="number" /> <br />
+                       <button type="submit">Add Budget</button>
+                     </form>
+                </div>
+              </div>
+            <!-- Graph -->
+            <div id="my_dataviz"></div>
             <!-- Container div will hold cards -->
             <div class="container"></div>
         </main>
