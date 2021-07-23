@@ -33,21 +33,21 @@
                 </ul>
             </nav>
             <!-- Budgetting -->
-            <div class="budget-section">
-
-                <div class="budget col col-md col-sm">
+            <!-- <div class="budget-section"> -->
+              <div class="row" >
+                <div class="budget col-sm">
                   <h2>budget</h2>
-                  <img src="images/money-bag.png" width="40" alt="" />
-                  <p class="amount">$ <span id="budgetAmount">0</span></p>
+                  <img src="images/money-bag.png" width="40" alt=""/>
+                  <p class="amount">$ <span id="budgetAmount">0</span></p> 
                 </div>
         
-                <div class="expenses col col-md col-sm">
+                <div class="expenses col-sm">
                   <h2>expenses</h2>
                   <img src="images/accounting.png" width="40" alt="" />
                   <p class="exp-amount">$ <span id="expensesAmount">0</span></p>
                 </div>
         
-                <div class="balance col col-md col-sm">
+                <div class="balance col-sm">
                   <h2>balance</h2>
                   <img src="images/law.png" width="40" alt="" />
                   <p class="amount bala">$ <span id="balanceAmount">0</span></p>
@@ -55,16 +55,42 @@
                 <!-- Form that takes budget amount -->
                 <div class="budget-form" id="budgetform">
                     <form id="addForm">
-                       <label for=""> Make a budget</label> <br />
+                       <label for=""> Make a budget</label> <br /> 
                        <input type="number" id="number" /> <br />
                        <button type="submit">Add Budget</button>
                      </form>
                 </div>
+                <div class="expense-form" id="expenseform">
+                  <form id="addForm_e">
+                     <label for=""> Make an expense</label> <br /> 
+                     <input type="number" id="number_e" /> <br />
+                     <button type="submit">Add Expense</button>
+                   </form>
               </div>
+              </div>
+              <div class="row" >
+                <div class="first_week col">
+                    FIRST WEEK, total expenses:
+                    <p class="amount">$ <span id="expensesTotal">0</span></p>
+                </div>
+
+                <div class="second_week col">
+                    SECOND WEEK
+                </div>
+
+                <div class="third_week  col">
+                    THIRTH WEEK
+                </div>
+
+                <div class="fourth_week col col-md col-sm">
+                    FOURTH WEEK
+                </div>
+              </div>
+            </div>
             <!-- Graph -->
             <div id="my_dataviz"></div>
             <!-- Container div will hold cards -->
-            <div class="container"></div>
+            <!-- <div class="container"></div> -->
         </main>
         <script src="js/app.js"></script>
     </body>
